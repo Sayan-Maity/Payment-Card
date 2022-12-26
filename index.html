@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--Font Awesome link is here !!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!--Jquery Selector link is here !!-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Style sheet link is here !! -->
+<link rel="stylesheet" href="CSS/style.css">
+
+  <script defer src="/your-path-to-fontawesome/js/brands.js"></script>
+  <script defer src="/your-path-to-fontawesome/js/solid.js"></script>
+  <script defer src="/your-path-to-fontawesome/js/fontawesome.js"></script>
+
+
+    <title>Payment Card</title>
+
+
+</head>
+<body>
+
+<div class="card">
+    <form>
+        <h1 class="card__title">Enter Payment Information</h1>
+        <div class="card__row">
+            <div class="card__col">
+                <label for="" class="card__label">Card Number</label><input type="text" class="card__input card__input--large" id="cardNumber" placeholder="xxxx-xxxx-xxxx-xxxx"></div>
+            <div class="card__col card__chip">
+                <img src="images/chip.svg" alt="chip">
+            </div>
+        </div>
+        <div class="card__row">
+            <div class="card__col">
+                <label for="cardExpiry" class="card__label">Expiry Date</label><input type="text" class="card__input" id="cardExpiry" placeholder="xx/xx"></div>
+            <div class="card__col">
+                <label for="cardCcv" class="card__label">CCV</label><input type="text" class="card__input" id="cardCcv" placeholder="xxx"></div>
+            <div class="card__col card__brand">
+                <i id="cardBrand"></i>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/cleave.js@1.6.0/dist/cleave.min.js"></script>
+
+<script src="JS/index.js"></script>
+
+
+
+    
+</body>
+</html>
